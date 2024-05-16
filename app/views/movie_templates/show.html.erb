@@ -118,10 +118,10 @@
         
     <% the_director = matching_directors.at(0) %>-->
 
-    <% the_director = @the_movie.director.name %>
+    <% the_director = @the_movie.director %>
 
     <% if the_director != nil %>
-      <%= the_director %>
+      <%= the_director.name %>
     <% else %>
       Uh oh! We weren't able to find a director for this movie.
     <% end %>
